@@ -1,0 +1,13 @@
+create database school;
+use school;
+create table marks ( id int , name varchar(20) , tamil int );
+insert into marks values(1,'sanjay',92);
+insert into marks values(2,'sam',89);
+insert into marks values (3,'ram',99);
+select * from marks;
+SET SQL_SAFE_UPDATES = 0;
+update marks set tamil = 100  where id = 1;
+alter table marks add english int;
+update marks set english = 90  where id = 1;
+update marks set english = 80  where id = 2;
+update marks set english = 70  where id = 3;
