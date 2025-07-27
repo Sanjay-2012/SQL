@@ -26,7 +26,7 @@ update marks set english = 90  where id = 1;
 update marks set english = 80  where id = 2;
 update marks set english = 70  where id = 3;
 
--- Alter the table
+- Alter the table
 alter table marks add english int;
 -- rename the column
 alter table marks change  column english japanese int;
