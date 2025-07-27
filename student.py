@@ -33,7 +33,7 @@ cursor.execute("UPDATE student SET name=?,age=? where id =?",("Samuel",19,2))
 cursor.execute("SELECT * FROM student")
 all_students = cursor.fetchall()
 
-print("\n📋 Student List:")
+print("\n Student List:")
 for s in all_students:
     print(f"ID: {s[0]} | Name: {s[1]} | Age: {s[2]}")
 
@@ -41,9 +41,9 @@ cursor.execute("SELECT * FROM student where id = ?",(2,))
 students = cursor.fetchone()
 
 if students:
-    print(f"\n🎯 Student Found:")
+    print(f"\nStudent Found:")
     print(f"ID: {students[0]} | Name: {students[1]} | Age: {students[2]}")
 else:
-    print("❌ Student not found.")
+    print(" Student not found.")
 
 conn.close()
