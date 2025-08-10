@@ -24,7 +24,7 @@ insert into areaboys values
 SET SQL_SAFE_UPDATES = 0;
 use boys;
 update areaboys set role = 'ui/ux' where id = 1;
-commit;
+commit; 
 select * from areaboys;
 -- this rollback is not work because the update will auto-commit , after commit rollback is not work.
 update areaboys set role = 'sql' where id = 6;
